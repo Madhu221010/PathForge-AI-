@@ -1,0 +1,21 @@
+{
+  "name": "pathforge-ai-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "mongoose": "latest",
+    "multer": "latest",
+    "pdf-parse": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}
