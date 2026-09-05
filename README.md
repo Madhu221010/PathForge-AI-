@@ -29,7 +29,7 @@ Resume / current skills + target career
 
 - Node.js 20.19+ recommended for the current Vite release.
 - A Gemini API key.
-- MongoDB Atlas connection string (optional for local demo; the server can run without MongoDB and keeps data in memory).
+  
 
 ## 1. Install
 
@@ -43,19 +43,9 @@ cd ../frontend
 npm install
 ```
 
-## 2. Environment variables
 
-Create `backend/.env`:
 
-```env
-PORT=5000
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-GEMINI_MODEL=gemini-3-flash-preview
-MONGODB_URI=YOUR_MONGODB_CONNECTION_STRING
-CLIENT_URL=http://localhost:5173
-```
 
-If you do not have MongoDB yet, leave `MONGODB_URI=` empty. The app will still run for the demo, but generated roadmaps will not persist after a server restart.
 
 ## 3. Start backend
 
@@ -102,28 +92,9 @@ git commit -m "Build PathForge UI"
 git push -u origin madhu-ui
 ```
 
-Then open a Pull Request on GitHub from `madhu-ui` → `main`.
 
-For teammates:
-
-```bash
-git checkout main
-git pull origin main
-git checkout -b sumaiya-ai
 ```
 
-and
 
-```bash
-git checkout main
-git pull origin main
-git checkout -b ojaswi-backend
-```
 
-Do not push directly to `main`.
 
-## Security
-
-Never put `GEMINI_API_KEY` in the React frontend. It belongs only in `backend/.env`, which must not be committed.
-
-The `.gitignore` already excludes `.env` and `node_modules`.
