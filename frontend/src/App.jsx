@@ -16,7 +16,7 @@ import {
   BriefcaseBusiness
 } from "lucide-react";
 
-const API = "http://localhost:5000/api";
+const API = "https://pathforge-ai-q9qn.onrender.com/api";
 
 const initialForm = {
   targetRole: "",
